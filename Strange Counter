@@ -1,0 +1,57 @@
+#include<math.h>
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+#include<assert.h>
+#include<limits.h>
+#include<stdbool.h>
+
+int main() {
+   int t, v;
+ //  int v;
+   
+   printf("Indroduzca un valor ");
+   scanf("%d",&t);
+   //printf("%d",t);
+   printf("\n");
+	if (t==0){
+		printf("Indroduzca un valor mayor a 0 ");
+   		scanf("%d",&t);
+   		printf("\n");
+		exit(0);
+	}   
+   
+	if (t < 4){
+		v = 4 - t;
+		printf("Tiempo %d ",t);
+		printf("\n");
+		printf("Valor %d ",v);
+		printf("\n");	
+		exit(0);
+	}
+	
+	if (t < 11){
+		v = 10 - t;
+		printf("Tiempo %d ",t);
+		printf("\n");
+		printf("Valor %d ",v);
+		printf("\n");	
+		exit(0);
+	}
+	
+		if (t < 22){
+		v = 21 - t;
+		printf("Tiempo %d ",t);
+		printf("\n");
+		printf("Valor %d ",v);
+		printf("\n");	
+		exit(0);
+	}
+	
+	if (21 < t){
+		printf("Error en el ingreso, indroduzca un valor menor a 22 ");
+		printf("\n");
+		exit(0);
+	}
+	return 0;
+}
